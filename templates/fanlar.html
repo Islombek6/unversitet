@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fanlar</title>
+</head>
+<body>
+<a href="/home/" class="a">Bosh sahifa</a>
+<h1>Fanlar ro'yxati</h1>
+{%for fan in fanlar%}
+<p>{{forloop.counter}}.
+    <a href="/fanlar/{{ fan.id}}/" class="button">
+        {{ fan.nom}}</a>
+
+</body>
+</html>
